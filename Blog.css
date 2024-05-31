@@ -1,0 +1,209 @@
+/* Setting default margin background color for body*/
+body{
+  margin:0;
+  background-color:aliceblue;
+}
+    /*This is header styling  */
+  nav{
+    background: #00ff1a;/*set header section color to green  */
+    height: 80px;
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content: flex-end;
+  }
+  nav a{
+    text-decoration:none;
+  }
+
+  nav ul{
+    float: right;
+    margin-right: 20px;
+    display:flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 0;
+    margin: 0;
+    padding:0 7px;
+  }
+
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+
+  nav a.active, nav a:hover{
+    background: #ff0000;/*hover effect is set to red */
+    transition: .25s;
+  }
+  
+    /* end of header styling*/
+  
+  /*Setting the styles for head1 element*/
+#head1{
+    text-align: center;
+    font-family: 'Brush Script MT',cursive;
+    font-size: 80px;
+    color: navy;
+}
+  /*Setting styles for img element*/
+    img{
+        width:80%;
+        height:80%;
+        margin-left: auto;
+        margin-right: auto;
+        display:block;
+    }
+    .page-1{
+       background-color: aliceblue;
+    }
+
+    /*Setting background color and position property to relative*/
+    .page-2, .page-3, .page-4, .page-5, .page-6{
+       background-color: greenyellow;
+       position: relative;
+       overflow:hidden;
+       margin:0 20px;
+    }
+
+    /*Setting background color for class page-7*/
+    .page-7{
+      background-color: bisque;
+      margin:0 20px;
+    }
+
+    /*This sets a style for an HTML li element*/
+    li{
+      margin:10px;
+      padding: 10px;
+      font-size:20px;
+    }
+
+    /*This sets a style for an HTML element with id "head2"*/
+    #head2{
+         font-family: Arial, Helvetica, sans-serif;
+         color:blue;
+         background-color: greenyellow;
+         text-align: center;
+    }
+
+    /*This sets a style for an HTML element with id "head6p"*/
+    #head6p{
+      font-family:cursive;
+      color:navy;
+      background-color: antiquewhite;
+    }
+
+    /*This sets a style for p elements of different pages*/
+    .page-2 p{
+      font-size: 20px;
+    }
+    .page-3 p{
+      font-size: 20px;
+    }
+    .page-4 p{
+      font-size: 20px;
+    }
+    .page-5 p{
+      font-size: 20px;
+    }
+    .page-6 p{
+      font-size: 20px;
+    }
+
+   /*This sets a style for anchor tags of page-7 class*/
+    .page-7 ul li a{
+      color: blue;
+    }
+    /*Hover effect for anchor tag*/
+    .page-7 ul li a:hover{
+      color:red;
+    }
+    /*style for image of page-2 class*/
+    .page-2 img{
+      position: absolute;
+      right: 450px;
+      width: 500px;
+      height: 350px;
+      transition:transform 2s;
+    }
+    /*hover effect for image*/
+    .page-2:hover img{
+      transform:scale(1.2);
+    }
+    /*style for image of page-3 class*/
+    .page-3 img{
+      position: absolute;
+      right: 450px;
+      width: 500px;
+      height: 380px;
+      transition:transform 2s;
+    }
+    /*hover effect for image*/
+    .page-3:hover img{
+      transform:scale(1.2);
+    }
+    /*style for image of page-4 class*/
+   .page-4 img{
+      position: absolute;
+      right: 450px;
+      width: 500px;
+      height: 350px;
+      transition: transform 2s;
+   }
+    /*hover effect for image*/
+   .page-4:hover img{
+    transform:scale(1.2);
+  }
+  /*Style for form*/
+   form {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  
+  b {
+    font-size: 1.44rem;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+  }
+  /*style for text area*/
+  textarea {
+    display:block;
+    margin: 0 auto;
+    height: 10%;
+    width: 50%;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+  }
+  /*style for input type*/
+  input[type="submit"] {
+    display:block;
+    margin:0 auto;
+    width: 10%;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+ /*footer styling*/
+ footer {
+  padding: 10px 20px;
+  background: #6184a8;
+  color: white;
+  text-align: center;
+  }

@@ -1,0 +1,88 @@
+
+    *{
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      list-style: none;
+      box-sizing: border-box;
+      
+    }
+   
+      
+        /*This is header css  */
+      nav {
+        background: #00ff1a;/*set header section color to green  */
+        height: 80px;
+        width: 100%;
+      }
+    
+      nav ul{
+        float: right;
+        margin-right: 20px;
+      }
+    
+      nav ul li{
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+      }
+    
+      nav ul li a{
+        color: white;
+        font-size: 17px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        width: 100%;
+        font-family: montserrat;
+      }
+    
+      a.active,a:hover{
+        background: #ff0000;/*hover effect is set to red */
+        transition: .25s;
+      }
+      
+      
+        /* end of header css */
+  img{
+    width:100%;
+    display:block;
+    margin:0;
+    padding:0;
+  }
+  .research{
+    background-color: lightgoldenrodyellow;
+  }
+  #head1{
+    color:green;
+    text-align:center;
+  }
+  #head2{
+    margin: 60px;
+  }
+ #p1{
+  text-align: justify;
+  font-size: 20px;
+  margin:60px;
+  } 
+  figcaption{
+    text-align: center;
+    font-size: 25px;
+    font-style:italic;
+    font-weight: bold;
+  }
+  #small{
+    width: 600px;
+    height: 600px;
+    display: block;
+    margin:auto;
+    object-fit: cover;
+
+  }
+  /*footer styling*/
+  footer {
+    padding: 10px 20px;
+    background: #6184a8;
+    color: white;
+    text-align: center;
+  }

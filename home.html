@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>HomePage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="home.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        
+      </head>
+   <body>
+
+            <!-------------Navigation bar-->
+            <nav>
+             <ul>
+                 <li><a class="active" href="home.html">Home</a></li>
+                 <li><a href="ourproduct.html">Our Product</a></li>
+                 <li><a href="BLOG.html">Blog</a></li>
+                 <li><a href="Research.html">Research</a></li>
+                 <li><a href="aboutus.html">Aboutus</a></li>
+             </ul>    
+           </nav>
+           <!----------------End of Navigation bar-->
+           <!-----image slider---->
+     <div class="content">
+            <div class="images">
+             <img src="1.jpg">
+             <div class="centered"><marquee direction="right" behaviour="scroll"> YOU ARE WELCOME TO FOREVER GREEN!!!</marquee></div>
+             <img src="2.JPG">
+             <img src="3.jpg">
+             <img src="4.JPG">
+             <img src="5.jpeg">
+          </div>
+          <div class="btm-slides">
+             <span onclick="btm_slide(1)"></span>
+             <span onclick="btm_slide(2)"></span>
+             <span onclick="btm_slide(3)"></span>
+             <span onclick="btm_slide(4)"></span>
+             <span onclick="btm_slide(5)"></span>
+          </div>
+          <div class="sliders left" onclick="side_slide(-1)">
+             <span class="fas fa-angle-left"></span>
+          </div>
+          <div class="sliders right" onclick="side_slide(1)">
+             <span class="fas fa-angle-right"></span>
+          </div>
+       </div>
+       <!---------javascript for image slider-->
+       <script>
+             var indexValue = 1;
+             showImg(indexValue);
+             function btm_slide(e){showImg(indexValue = e);}
+             function side_slide(e){showImg(indexValue += e);}
+             function showImg(e){
+             var i;
+              const img = document.querySelectorAll('img');
+                const slider = document.querySelectorAll('.btm-slides span');
+                if(e > img.length){indexValue = 1}   
+                 if(e < 1){indexValue = img.length}
+                 for(i = 0; i < img.length; i++){
+                 img[i].style.display = "none";
+                }
+                    for(i = 0; i < slider.length; i++){
+                       slider[i].style.background = "rgba(255,255,255,0.1)";
+                }
+                img[indexValue-1].style.display = "block";
+                slider[indexValue-1].style.background = "white";}
+       </script>
+       <!----------End of image slider -->
+       <h1 style="text-align: center;"> WELCOME TO FOREVER GREEN PVT.LTD</h1><br>
+               <div class="cont">
+                  <p class="par">Forever Green bonsai gives the small tree a story, through the use of artistic design and horticulture. 
+                  We use our artistic skills to help the tree to grow in the way that we want.We use our gardening skills to keep the tree healthy, so that it grows strongly. 
+                  We often plant the tree into decorative pots which look nice and compliment the overall image. We use bonsai tools and accessories such as scissors and cutters to prune the tree. 
+                  We sometimes use special bonsai wire to control the direction of branches and trunks. We fertilise bonsai trees and use good quality soil to promote healthy growth.</p> 
+                   <button class="cn"><a href="aboutus.html">LEARN MORE!!!</a></button><br>
+               </div>
+               
+                              <h1 style="border:2px solid rgb(102, 255, 71);text-align:center">DECORATE YOUR HOME WITH FOREVER GREEN BONSAI</h1><br>
+               
+                              <h1 style="color:black;text-align:center"><a href="ourproduct.html" >OUR PREMIUM PRODUCTS</a></h1>
+
+               
+     <div class="cards">
+         <div class="card">
+            <h2 class="card-title">Juniper </h2>
+            <img src="6.jpg" alt="bonsai image">
+            <p class="card-desc">
+              A juniper bonsai is a popular variety of bonsai trees, placed in a unique Crescent Bowl which enhances the dramatic effect of the cascade composition.
+               These bonsais are small, short-stature trees with a prominent, artfully twisted trunk. They have needle-like foliage, which is quite different from average tree leaves. 
+            </p>
+         </div>
+          <div class="card">
+             <h2 class="card-title">Bougainvillea</h2>
+              <img src="7.jpg" alt="bonsai image">
+              <p class="card-desc">Bougainvillea are a tropical and subtropical colorful vine.
+                 They are thorny, evergreen and some are fragrant. Bougainvillea are popular for their large, colorful "blooms" which are produced most profusely in the summer. 
+                 Like the dogwood and the poinsettia, their colorful "petals" are really bracts (modified leaves.)</p>
+         </div>
+           <div class="card">
+             <h2 class="card-title">Chinese elm</h2>
+              <img src="8.jpg" alt="bonsai image">
+              <p class="card-desc">The Chinese Elm has beautiful, distinctive dark gray to reddish brown bark that turns fissure and corky when mature.
+                 It has a lovely branching shape with delicate, oval shaped toothed leaves that showcase a fresh green color and a delightfully tiny leaf.
+                 It has a highly predictable growth pattern, making it ideal for beginners who are just getting used to training Bonsai.</p>
+         </div>
+       </div>
+
+                     
+
+       <footer>
+         <p>|Company ©ForeverGreen. All rights reserved.|
+            |Contact No:023-788399| |Email:info.forevergreen.com.np|
+         </p>
+       </footer>
+   </body>
+
+
+</html>

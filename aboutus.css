@@ -1,0 +1,189 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* background color for body*/
+.body{
+  background: #FFFFFF;
+  font-family: montserrat;
+}
+nav{
+  background: #00ff1a;/*set header section color to green  */
+  height: 80px;
+  width: 100%;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,a:hover{
+  background: #ff0000;/*hover effect is set to red */
+  transition: .25s;
+}
+
+/* Styling for portfolio*/
+.wrapper{
+  margin-top: 60px;
+  text-align: center;
+}
+
+.our_team{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.our_team .team_member{
+  width: 250px;
+  margin: 5px;
+  background: rgb(255, 255, 255);
+  padding: 20px 10px;
+}
+
+.our_team .team_member .member_img{
+  background: #e9e5fa;  
+  max-width: 190px;
+  width: 100%;
+  height: 190px;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.our_team .team_member .member_img img{
+  width: 194px;
+  height: 194px;
+  border-radius: 100%;
+}
+
+.our_team .team_member h3{
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  margin: 15px 0 0px;
+}
+
+.our_team .team_member span{
+  font-size: 10px;
+}
+
+.our_team .team_member p{
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.our_team .team_member .member_img .social_media{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: rgba(0,0,0,0.65);
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+   transition: all 0.5s ease;
+}
+
+.our_team .team_member .member_img .social_media .item{
+  margin: 0 10px;
+}
+
+.our_team .team_member .member_img .social_media .fab{
+  color: #8c7ae6;
+  font-size: 20px;
+}
+/* hover for displaying social media icons*/
+
+.our_team .team_member .member_img:hover .social_media{
+  transform: scale(1);
+}
+
+/*  styling for the form */
+form {
+  width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Styling for the table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Styling for the table cells */
+td {
+  padding: 10px;
+}
+
+/* Styling for the labels */
+label {
+  font-weight: bold;
+}
+
+/* Styling for the input fields */
+input[type="text"], input[type="tel"], textarea {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Styling for the radio buttons */
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Styling for the checkboxes */
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Styling for the submit button */
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Styling for the submit button on hover */
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+/*styling footer*/
+footer {
+  padding: 10px 20px;
+  background: #6184a8;
+  color: white;
+  text-align: center;
+}

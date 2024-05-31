@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    
+</head>
+
+<body>
+     <!-------------Navigation bar-->
+     <nav>
+               
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="ourproduct.html">Our Product</a></li>
+            <li><a href="BLOG.html">Blog</a></li>
+            <li><a href="Research.html">Research</a></li>
+            <li><a class="active" href="aboutus.html">About us</a></li>
+        </ul>    
+      </nav>
+    
+    <div class="wrapper">
+        <h1>Our Team members</h1><br>
+        <div class="our_team">
+            <div class="team_member">
+                <div class="member_img">
+                    <img src="member_1.jpg" alt="our_team">
+                    <div class="social_media">
+                        <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
+                        <div class="twitter item"><i class="fab fa-twitter"></i></div>
+                        <div class="instagram item"><i class="fab fa-instagram"></i></div>
+                    </div>
+                </div>
+
+                <h3>Nischal Basnet</h3>
+                <h3><span>web developer</span></h3>
+                <p>Hi! I am Nischal,I am a front-end web developer.
+                    I have developed About us page on this website.
+                    I have completed my college from shikshadeep.</p>
+            </div>
+            <div class="team_member">
+                <div class="member_img">
+                    <img src="member_2.jpg" alt="our_team">
+                    <div class="social_media">
+                        <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
+                        <div class="twitter item"><i class="fab fa-twitter"></i></div>
+                        <div class="instagram item"><i class="fab fa-instagram"></i></div>
+                    </div>
+                </div>
+
+                <h3>Rijan Adhikari</h3>
+                <h3><span>web developer</span></h3>
+                <p>Hi! I am Rijan,I am a front-end web developer.
+                    I have developed Reserch and blog page on this website.
+                    I have completed my college from BishwoAdarsha.</p>
+            </div>
+            <div class="team_member">
+                <div class="member_img">
+                    <img src="member_3.jpg" alt="our_team">
+                    <div class="social_media">
+                        <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
+                        <div class="twitter item"><i class="fab fa-twitter"></i></div>
+                        <div class="instagram item"><i class="fab fa-instagram"></i></div>
+                    </div>
+                </div>
+
+                <h3>pritee bhattrai</h3>
+                <h3><span>web developer</span></h3>
+                <p>Hi! I am Pritee,I am a front-end web developer.
+                    I have developed product page on this website.
+                    I have completed my college from Shikshadeep.</p>
+            </div>
+            <div class="team_member">
+                <div class="member_img">
+                    <img src="member_4.jpg" alt="our_team">
+                    <div class="social_media">
+                        <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
+                        <div class="twitter item"><i class="fab fa-twitter"></i></div>
+                        <div class="instagram item"><i class="fab fa-instagram"></i></div>
+                    </div>
+                </div>
+
+                <h3>subashish khanal </h3>
+                <h3><span>web developer</span></h3>
+                <p>Hi! I am Subashish,I am a front-end web developer.I have developed Home
+                    page on this website.I have completed My college in panchayat pathri.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-text">
+        <form method="post" action="#">
+            <h1> Your Feedback is Important for us </h1><br>
+            <fieldset>
+                <table>
+                    <tr>
+                        <td><label for="name" id="name-label">Name:</label></td>
+                        <td><input type="text" id="name" name="user_name" placeholder="Enter Your Name" 
+                                style="width: 300px; height: 40px;"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="address">Address:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="user_address" id="address" placeholder="Enter your address" 
+                                style="width: 300px; height: 40px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="phone no">Phone: </label>
+                        </td>
+                        <td>
+                            <input type="tel" id="phone" name="user_phone" placeholder="Enter your phone Number" 
+                                style="width: 300px; height: 40px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="gender">Gender:</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="gender" value="male" checked> Male
+                            <input type="radio" name="gender" value="female"> Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="favorite_bonsai">Favorite Bonsai Plant:</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="ficus" name="favorite_bonsai" value="ficus">
+                            <label for="ficus">Ficus</label>
+                            <input type="checkbox" id="juniper" name="favorite_bonsai" value="juniper">
+                            <label for="juniper">Juniper</label><br>
+                            <input type="checkbox" id="maple" name="favorite_bonsai" value="maple">
+                            <label for="maple">Maple</label>
+                            <input type="checkbox" id="others" name="favorite_bonsai" value="others">
+                            <label for="others">others</label>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Your Feedback</legend><br>
+                <div>
+                    <textarea id="msg" name="user_msg" rows="5" cols="5" placeholder="Enter your Feedback"
+                        style="width: 435px; height: 100px;"></textarea>
+                </div>
+            </fieldset>
+            <div id="submitbutton">
+                <button type="submit" id="submit">Submit</button><br><br>
+            </div>
+        </form>
+    </div>
+    <script src="aboutus.js"></script>
+    <footer>
+        <p>|Company ©ForeverGreen. All rights reserved.|
+           |Contact No:023-788399| |Email:info.forevergreen.com.np|
+        </p>
+    </footer>
+</body>
+</html>

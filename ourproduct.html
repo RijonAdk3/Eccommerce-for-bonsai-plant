@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HomePage</title>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        
+
+   
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="ourproduct.css">
+
+   <!-- custom js file link  -->
+   <script src="ourproduct.js" defer></script>
+
+</head>
+<body>
+
+   <!-- Creating view product button -->
+   <button id="scroll-to-top-btn"></button>
+   <!-- Navigation bar of different pages -->
+    <nav>
+               
+      <ul>
+          <li><a  href="home.html">Home</a></li>
+          <li><a class="active" href="ourproduct.html">Our Product</a></li>
+          <li><a href="BLOG.html">Blog</a></li>
+          <li><a href="Research.html">Research</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+
+      </ul>    
+    </nav>
+    
+
+          <!-- using marquee tag for displaying something -->
+          <marquee style= "font-size: 20px; "right scrollamount="15"> SPECIAL OFFER up to 30% off</marquee>
+          <marquee style="font-size: 20px; "left scrollamount="5"> Buy Now or REGRET later </marquee>
+       
+          <!-- Code for search bar -->
+          <form>
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+          </form>
+          <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </div>
+   
+          <!-- Giving heading to our page -->
+         <div class="container">
+
+         <h3 class="title"> Plant Of Your Choice </h3>
+
+         <div class="products-container">
+
+         <!-- Inserting products image with its price -->
+      <div class="product" data-name="p-1">
+         <img src="Bonsai1.png" alt="">
+         <h3> Red Maple Bonsai </h3>
+         <div class="price">
+            <span class="original-price">Rs.2000</span>
+            <span class="discounted-price">Rs.1700</span>
+          </div>
+      </div>
+
+      <div class="product" data-name="p-2">
+         <img src="Bonsai2.png" alt="">
+         <h3>Chinese Juniperus Bonsai</h3>
+         <div class="price">
+         <span class="original-price">Rs.1500</span>
+         <span class="discounted-price">Rs.1275</span>
+      </div>
+      </div>
+
+      <div class="product" data-name="p-3">
+         <img src="Bonsai3.png" alt="">
+         <h3>Japanese Maple Bonsai</h3>
+         <div class="price">Rs.2000</div>
+      </div>
+
+      <div class="product" data-name="p-4">
+         <img src="Bonsai4.png" alt="">
+         <h3>Shimpaku Bonsai</h3>
+         <div class="price">Rs1780</div>
+      </div>
+
+      <div class="product" data-name="p-5">
+         <img src="Bonsai5.png" alt="">
+         <h3>Pink Bonsai</h3>
+         <div class="price">
+            <span class="original-price">Rs.1550</span>
+            <span class="discounted-price">Rs.1180</span>
+          </div>
+      </div>
+
+      <div class="product" data-name="p-6">
+         <img src="Bonsai6.png" alt="">
+         <h3>Artificial Bonsai</h3>
+         <div class="price">Rs.2115</div>
+      </div>
+
+      <div class="product" data-name="p-7">
+         <img src="Bonsai7.png" alt="">
+         <h3>Rare Juniper Bonsai</h3>
+         <div class="price">Rs.1600</div>
+      </div>
+      <div class="product" data-name="p-8">
+         <img src="Bonsai8.png" alt="">
+         <h3>Satsuki Azalea Bonsai</h3>
+         <div class="price">
+            <span class="original-price">Rs.1100</span>
+            <span class="discounted-price">Rs.980</span>
+          </div>
+          
+      </div>
+     <div class="product" data-name="p-9">
+         <img src="Bonsai9.png" alt="">
+         <h3>White Jasmine Bonsai</h3>
+         <div class="price">Rs.2000</div>
+      </div>
+
+      <div class="product" data-name="p-10">
+         <img src="Bonsai10.png" alt="">
+         <h3>Carmona Bonsai</h3>
+         <div class="price">Rs.2500</div>
+      </div>
+      <div class="product" data-name="p-11">
+         <img src="Bonsai11.png" alt="">
+         <h3> Buxus Bonsai</h3>
+         <div class="price">
+            <span class="original-price">Rs.2100</span>
+            <span class="discounted-price">Rs.1880</span>
+          </div>
+      </div>
+      <div class="product" data-name="p-12">
+         <img src="Bonsai13.png" alt="">
+         <h3> Bonsai</h3>
+         <div class="price">
+            <span class="original-price">Rs.2100</span>
+            <span class="discounted-price">Rs.1880</span>
+          </div>
+      </div>
+      <marquee style= "font-size: 20px; "right scrollamount="15"> New Plants   Coming soon                 Coming soon</marquee>
+   <!-- Giving rating to our products -->
+   <div class="products-preview">
+
+   <div class="preview" data-target="p-1">
+      <i class="fas fa-times"></i>
+      <img src="Bonsai1.png" alt="">
+      <h3> Red Maple Bonsai </h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+
+      <!-- Explaination about our plants with buy now and add to cart features -->
+      <p>Japanese maple trees are particularly popular as decorative shrubs. The Deshojo and Seigen are two red-leaved types, also known as just red maples. Additionally, it is well-known and well-liked for its stunning  red autumn foliage hues, with  red maples being the most well-liked.</p>
+      <div class="price">Rs.1700</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-2">
+      <i class="fas fa-times"></i>
+      <img src="Bonsai2.png" alt="">
+      <h3>Chinese Juniperus</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <span>( 250 )</span>
+      </div>
+
+      <p>Trees and plants that have been trained to look even more lovely than those that would naturally grow in the wild are known as bonsai. As a result, growing bonsai is both a traditional Japanese art and a very creative hobby.</p>
+      <div class="price">Rs.1275</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-3">
+      <i class="fas fa-times"></i>
+      <img src="Bonsai3.png" alt="">
+      <h3> Japanese Maple Bonsai</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Trees and plants that have been trained to look even more lovely than those that would naturally grow in the wild are known as bonsai. As a result, growing bonsai is both a traditional Japanese art and a very creative hobby.</p>
+      <div class="price">Rs.2000</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-4">
+      <i class="fas fa-times"></i>
+      <img src="Bonsai4.png" alt="">
+      <h3>Shimpaku Bonsai</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Trees and plants that have been trained to look even more lovely than those that would naturally grow in the wild are known as bonsai. As a result, growing bonsai is both a traditional Japanese art and a very creative hobby.</p>
+      <div class="price">Rs.1780
+      </div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-5">
+      <i class="fas fa-times"></i>
+      <img src="Bonsai5.png" alt="">
+      <h3>Pink Bonsai</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Trees and plants that have been trained to look even more lovely than those that would naturally grow in the wild are known as bonsai. As a result, growing bonsai is both a traditional Japanese art and a very creative hobby.</p>
+      <div class="price">Rs.1180</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-6">
+      <i class="fas fa-times"></i>
+      <img src="Bonsai6.png" alt="">
+      <h3>Artificial Bonsai</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Trees and plants that have been trained to look even more lovely than those that would naturally grow in the wild are known as bonsai. As a result, growing bonsai is both a traditional Japanese art and a very creative hobby.</p>
+      <div class="price">Rs.2115</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-7">
+      <i class="fas fa-times"></i>
+      <img src="Bonsai7.png" alt="">
+      <h3>Rare Juniper Bonsai</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Trees and plants that have been trained to look even more lovely than those that would naturally grow in the wild are known as bonsai. As a result, growing bonsai is both a traditional Japanese art and a very creative hobby.</p>
+      <div class="price">Rs.1600</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-8">
+      <i class="fas fa-times"></i>
+      <img src="Bonsai8.png" alt="">
+      <h3>Satsuki Azalea Bonsai </h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Trees and plants that have been trained to look even more lovely than those that would naturally grow in the wild are known as bonsai. As a result, growing bonsai is both a traditional Japanese art and a very creative hobby.</p>
+      <div class="price">Rs.980</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-9">
+      <i class="fas fa-times"></i>
+      <img src="Bonsai9.png" alt="">
+      <h3>White Jasmine Bonsai</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Trees and plants that have been trained to look even more lovely than those that would naturally grow in the wild are known as bonsai. As a result, growing bonsai is both a traditional Japanese art and a very creative hobby.</p>
+      <div class="price">Rs.2000</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-10">
+      <i class="fas fa-times"></i>
+      <img src="Bonsai10.png" alt="">
+      <h3>Carmona Bonsai</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Trees and plants that have been trained to look even more lovely than those that would naturally grow in the wild are known as bonsai. As a result, growing bonsai is both a traditional Japanese art and a very creative hobby.</p>
+      <div class="price">Rs.2500</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-11">
+      <i class="fas fa-times"></i>
+      <img src="Bonsai11.png" alt="">
+      <h3>Buxus Bonsai</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Trees and plants that have been trained to look even more lovely than those that would naturally grow in the wild are known as bonsai. As a result, growing bonsai is both a traditional Japanese art and a very creative hobby.</p>
+      <div class="price">Rs.1880</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-12">
+      <i class="fas fa-times"></i>
+      <img src="Bonsai13.png" alt="">
+      <h3>Bonsai</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Trees and plants that have been trained to look even more lovely than those that would naturally grow in the wild are known as bonsai. As a result, growing bonsai is both a traditional Japanese art and a very creative hobby.</p>
+      <div class="price">Rs.1500</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+</div>
+
+
+
+
+
+<footer>
+   <p>|Company ©ForeverGreen. All rights reserved.|
+      |Contact No:023-788399| |Email:info.forevergreen.com.np|
+   </p>
+ </footer>
+</body>
+</html>
